@@ -1,0 +1,19 @@
+<html>
+<head>
+<script>
+ var ten=0; 
+ for(var i=0;i<256;i+=5)
+ 		for(var j=0;j<256;j+=5)	
+ 		  for(var k=0;k<256;k+=5){
+ 		      document.write("<span style='background-color:rgb("+i+","+j+","+k+");width:120px;float:left;color:rgb("+(256-i)+","+(256-j)+","+(256-k)+");'>#"+(i>15?i.toString(16).toUpperCase():("0"+i.toString(16).toUpperCase())) +""+(j>15?j.toString(16).toUpperCase():("0"+j.toString(16).toUpperCase()))+""+(k>15?k.toString(16).toUpperCase():("0"+k.toString(16).toUpperCase())) +"</span><span style='float:left;'>&nbsp;</span>");	
+ 		      if(++ten==10){
+ 		     	ten=0;
+ 		     	document.write("<br>");
+ 		    }
+	    }
+</script>
+</head>
+<body>
+	
+</body>
+</html>
